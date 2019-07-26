@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <ul>
+      {% for student in cssi %}
+      <li>
+        <a href="/student?student_name={{student['name']}}&university={{student['university']}}">
+          {{student['name']}}
+        </a></li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
